@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
+# creating functions for encryption and decryption
 def encrypt_image(path, key):
     try:
         print('Path of the image:', path)
@@ -43,6 +44,7 @@ def decrypt_image(path, key):
         print('Error:', e)
         messagebox.showerror("Error", f'Error: {str(e)}')
 
+# creating functions for the GUI
 def browse_file():
     file_path = filedialog.askopenfilename()
     if file_path:
